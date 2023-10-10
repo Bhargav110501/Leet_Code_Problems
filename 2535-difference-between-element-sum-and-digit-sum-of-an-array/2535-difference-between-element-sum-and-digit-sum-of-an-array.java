@@ -8,9 +8,9 @@ class Solution {
                 dS += nums[i];
             }
             else{
-                while(nums[i] != 0){
-                    dS += nums[i] % 10;;
-                    nums[i] = nums[i] /10;
+                while (nums[i] > 0) {
+                    dS += nums[i] % 10;
+                    nums[i] /= 10;
                 }
             }
         }
